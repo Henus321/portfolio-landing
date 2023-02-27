@@ -1,14 +1,14 @@
 import React from "react";
 import { FaMoon } from "react-icons/fa";
-import { StyledThemeSwitcher } from "./ThemeSwitcher.styled";
+import { ThemeSwitcherContainer } from "./ThemeSwitcher.styled";
 
 const ThemeSwitcher = () => {
   return (
-    <StyledThemeSwitcher>
-      <span>Light Mode</span>
+    <ThemeSwitcherContainer>
+      <span>Светлая тема</span>
       <FaMoon />
       <input type="radio"></input>
-    </StyledThemeSwitcher>
+    </ThemeSwitcherContainer>
   );
 };
 

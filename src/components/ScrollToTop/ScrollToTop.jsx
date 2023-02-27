@@ -1,8 +1,13 @@
 import React from "react";
-import { StyledScrollToTop } from "./ScrollToTop.styled";
+import { ScrollToTopContainer } from "./ScrollToTop.styled";
+import { FaArrowUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
-  return <StyledScrollToTop>Up!</StyledScrollToTop>;
+  return (
+    <ScrollToTopContainer>
+      <FaArrowUp />
+    </ScrollToTopContainer>
+  );
 };
 
 export default ScrollToTop;

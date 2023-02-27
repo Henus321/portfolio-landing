@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const StyledScrollToTop = styled.button`
+export const ScrollToTopContainer = styled.button`
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  border-radius: 50%;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
   border: none;
-  background-color: darkgoldenrod;
+  background-color: white;
+  font-size: 2rem;
   cursor: pointer;
 `;

@@ -16,8 +16,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.primary};
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+    color: #303030;
+    font-family: 'Shantell Sans', sans-serif;
     font-size: 1.6rem;
   }
 `;

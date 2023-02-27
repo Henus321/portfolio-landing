@@ -1,15 +1,15 @@
 import React from "react";
-import { StyledNavigation } from "./Navigation.styled";
+import { NavigationContainer } from "./Navigation.styled";
 
 const Navigation = () => {
   return (
-    <StyledNavigation>
+    <NavigationContainer>
       <ul>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
+        <li>О себе</li>
+        <li>Навыки</li>
+        <li>Проекты</li>
       </ul>
-    </StyledNavigation>
+    </NavigationContainer>
   );
 };
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledNavigation = styled.nav`
+export const NavigationContainer = styled.nav`
   display: flex;
 
   ul {
@@ -11,8 +11,19 @@ export const StyledNavigation = styled.nav`
 
   li {
     display: block;
-    padding: 1rem;
-    margin-right: 1rem;
-    background-color: red;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transform: rotate(-1deg);
+
+    &:first-child {
+      transform: rotate(2deg);
+    }
+
+    &:last-child {
+      transform: rotate(3deg);
+    }
   }
 `;
