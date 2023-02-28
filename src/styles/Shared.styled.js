@@ -12,7 +12,8 @@ export const Pin = styled.img`
   bottom: ${({ bottom }) => bottom || "unset"};
   left: ${({ left }) => left || "unset"};
   filter: ${({ hue }) => `grayscale(10%) hue-rotate(${hue || 0})`};
-  transform: ${({ rotate }) => `rotate(${rotate || 0})`};
+  transform: ${({ rotate, scale }) =>
+    `rotate(${rotate || 0}) scale(${scale | 1})`};
   display: block;
   width: auto;
   height: ${({ size }) => size || "5rem"};

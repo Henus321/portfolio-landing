@@ -7,6 +7,7 @@ import { ReactComponent as Webpack } from "../assets/icons/webpack.svg";
 import { ReactComponent as Tailwind } from "../assets/icons/tailwindcss.svg";
 import { ReactComponent as Jest } from "../assets/icons/jest.svg";
 import { ReactComponent as Antd } from "../assets/icons/antd.svg";
+import { ReactComponent as StyledComponents } from "../assets/icons/styled-components.svg";
 
 export const ABOUT = {
   basic: {
@@ -51,8 +52,15 @@ export const SKILLS = {
   },
   layout: {
     title: "Верстка",
-    list: ["HTML", "CSS", "SCSS", "Ant Design", "TailwindCSS"],
-    icons: [FaHtml5, FaCss3Alt, Sass, Antd, Tailwind],
+    list: [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Styled Components",
+      "TailwindCSS",
+      "Ant Design",
+    ],
+    icons: [FaHtml5, FaCss3Alt, Sass, StyledComponents, Tailwind, Antd],
   },
   additional: {
     title: "Дополнительно",

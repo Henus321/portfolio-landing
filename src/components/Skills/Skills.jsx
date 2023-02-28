@@ -7,11 +7,30 @@ import {
   SkillsAdditionalEl,
   Icons,
 } from "./Skills.styled";
+import tape from "../../assets/decoration/tape.png";
+import { Pin } from "../../styles/Shared.styled";
 
 const Skills = () => {
   return (
     <SkillsContainer>
       <SkillsBackground>
+        <Pin
+          rotate="-45deg"
+          top="-2rem"
+          left="-8rem"
+          size="13rem"
+          src={tape}
+          alt="Tape"
+        />
+        <Pin
+          rotate="65deg"
+          scale="-1"
+          top="-2rem"
+          right="-10rem"
+          size="13rem"
+          src={tape}
+          alt="Tape"
+        />
         <SkillsEl>
           <h3>{SKILLS.primary.title}</h3>
           <ul>
@@ -37,7 +56,6 @@ const Skills = () => {
           </ul>
         </SkillsEl>
         <Icons>
-          {/* Temporary */}
           {[
             ...SKILLS.primary.icons,
             ...SKILLS.secondary.icons,
