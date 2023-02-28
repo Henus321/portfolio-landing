@@ -8,6 +8,9 @@ import { ReactComponent as Tailwind } from "../assets/icons/tailwindcss.svg";
 import { ReactComponent as Jest } from "../assets/icons/jest.svg";
 import { ReactComponent as Antd } from "../assets/icons/antd.svg";
 import { ReactComponent as StyledComponents } from "../assets/icons/styled-components.svg";
+import boneyJames from "../assets/img/boney-james.jpg";
+import mernDashboard from "../assets/img/mern-dashboard.jpg";
+import portfolioLanding from "../assets/img/portfolio-landing.jpg";
 
 export const ABOUT = {
   basic: {
@@ -74,22 +77,37 @@ export const SKILLS = {
   },
 };
 
-export const PROJECTS = {
-  first: {
+export const PROJECTS = [
+  {
     name: "Boney James",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus error ex consequatur in mollitia cupiditate, laudantium adipisci provident libero. Nemo sed fugiat ut officia optio eum doloremque quia voluptate!",
-    image:
-      "https://images.unsplash.com/photo-1514813836041-518668f092b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "Веб-сайт электронной коммерции. Вы можете просматривать коллекцию пальто, добавлять товары в корзину, делать закладки и заказывать товары. Аутентификация осуществляется с помощью Firebase.",
+    stack:
+      "TypeScript, React, Redux with RTK, Firebase, SCSS, Webpack, React Testing Library",
+    image: boneyJames,
+    link: "https://boney-james.netlify.app/",
+    github: "https://github.com/Henus321/boney-james",
   },
-  second: {
+  {
     name: "Mern Dashboard",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus error ex consequatur in mollitia cupiditate, laudantium adipisci provident libero. Nemo sed fugiat ut officia optio eum doloremque quia voluptate!",
-    image:
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "Полнофункциональное веб-приложение. Вы можете создавать или редактировать заказы на основе клиентов и продуктов из базы данных. Аутентификация осуществляется с помощью JWT и хранится в файлах cookie. Пользовательские данные доступны для редактирования в настройках профиля.",
+    stack:
+      "TypeScript, React, Redux with RTK, Ant Design, Webpack, React Testing Library, JavaScript, Node, Express, Mongo DB",
+    image: mernDashboard,
+    link: "https://mern-dashboard.onrender.com/",
+    github: "https://github.com/Henus321/mern-dashboard",
   },
-};
+  {
+    name: "Portfolio Landing",
+    description:
+      "Многофункциональное, ослепительное и вызывающее легкую зависть портфолио. Вы можете смотреть на него и восторгаться.",
+    stack: "JavaScript, React, Styled Components",
+    image: portfolioLanding,
+    link: "https://hen-portfolio-landing.netlify.app/",
+    github: "https://github.com/Henus321/portfolio-landing",
+  },
+];
 
 export const CONTACTS = {
   github: "henus321",

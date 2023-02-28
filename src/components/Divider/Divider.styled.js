@@ -44,37 +44,6 @@ export const DividerContainer = styled.div`
           rgba(236, 178, 186, 0)
         );
     }
-    /* background: linear-gradient(
-        to bottom right,
-        #bcb5a9,
-        20%,
-        rgba(236, 178, 186, 0)
-      ),
-      #b5a488;
-    transform: ${({ rotate }) => `rotate(${rotate || 0})`};
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-          0deg,
-          rgba(236, 178, 186, 0),
-          49%,
-          rgba(235, 235, 235, 0.65),
-          51%,
-          rgba(236, 178, 186, 0)
-        ),
-        linear-gradient(
-          89.5deg,
-          rgba(236, 178, 186, 0),
-          49%,
-          rgba(235, 235, 235, 0.65),
-          50%,
-          rgba(236, 178, 186, 0)
-        );
-    } */
   }
 
   h2 {
