@@ -111,6 +111,6 @@ export const PROJECTS = [
 
 export const CONTACTS = {
   github: "henus321",
-  email: "mail@yandex.ru",
-  telegram: "+7 903 1234567",
+  email: "tyrantbud@yandex.ru",
+  telegram: "+7 (963) 962-40-50",
 };

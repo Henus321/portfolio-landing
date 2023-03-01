@@ -12,13 +12,14 @@ const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
     background: ${({ theme }) => theme.colors.primary};
     color: #303030;
     font-family: 'Shantell Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 `;
 

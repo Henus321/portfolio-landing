@@ -34,7 +34,7 @@ export const SkillsBackground = styled.div`
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: underline;
     z-index: 2;
   }

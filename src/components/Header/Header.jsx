@@ -5,7 +5,7 @@ import { HeaderContainer } from "./Header.styled";
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="header">
       <Navigation />
       <ThemeSwitcher />
     </HeaderContainer>

@@ -98,7 +98,6 @@ export const Information = styled.div`
   p {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
-    font-size: 2rem;
   }
 
   a {
@@ -121,11 +120,11 @@ export const Information = styled.div`
 
     &:hover {
       transform: rotate(2deg) translateY(-3px);
-      filter: brightness(110%);
+      filter: brightness(105%);
     }
 
     &:active {
-      filter: brightness(90%);
+      filter: brightness(96%);
     }
 
     svg {

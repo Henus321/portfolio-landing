@@ -35,7 +35,9 @@ const Skills = () => {
           <h3>{SKILLS.primary.title}</h3>
           <ul>
             {SKILLS.primary.list.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </SkillsEl>
@@ -43,7 +45,9 @@ const Skills = () => {
           <h3>{SKILLS.secondary.title}</h3>
           <ul>
             {SKILLS.secondary.list.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </SkillsEl>
@@ -51,7 +55,9 @@ const Skills = () => {
           <h3>{SKILLS.layout.title}</h3>
           <ul>
             {SKILLS.layout.list.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </SkillsEl>
@@ -66,7 +72,9 @@ const Skills = () => {
           <h3>{SKILLS.additional.title}</h3>
           <ul>
             {SKILLS.additional.list.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </SkillsAdditionalEl>

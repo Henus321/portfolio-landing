@@ -4,7 +4,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   return (
-    <ScrollToTopContainer>
+    <ScrollToTopContainer href="#header">
       <FaArrowUp />
     </ScrollToTopContainer>
   );

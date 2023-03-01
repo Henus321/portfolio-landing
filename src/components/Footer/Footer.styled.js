@@ -5,18 +5,21 @@ export const FooterContainer = styled.footer`
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  padding: 2rem 2rem 4rem;
+  padding: 3rem 2rem 5rem;
   width: 100%;
   background-color: white;
-  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.35);
 
   h2 {
     grid-column: 1 / -1;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
   }
 
   span {
     display: flex;
+    align-items: center;
 
     &:not(:last-child) {
       margin-right: 2rem;
@@ -24,7 +27,7 @@ export const FooterContainer = styled.footer`
   }
 
   svg {
-    font-size: 2rem;
-    margin-right: 0.5rem;
+    font-size: 2.5rem;
+    margin-right: 1rem;
   }
 `;

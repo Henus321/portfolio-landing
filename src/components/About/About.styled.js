@@ -30,7 +30,6 @@ export const AboutContainer = styled.section`
     align-items: center;
     width: 100%;
     padding: 3rem 2rem 2rem;
-    font-size: 2rem;
     background: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     border: none;
@@ -43,11 +42,11 @@ export const AboutContainer = styled.section`
 
     &:hover {
       transform: rotate(-2deg) translateY(-3px);
-      filter: brightness(110%);
+      filter: brightness(105%);
     }
 
     &:active {
-      filter: brightness(90%);
+      filter: brightness(96%);
     }
 
     svg {
@@ -93,7 +92,7 @@ export const Papers = styled.div`
 
     &:hover {
       transform: rotate(1deg) translateY(-3px);
-      filter: brightness(110%);
+      filter: brightness(105%);
     }
 
     &:first-child {
@@ -102,7 +101,7 @@ export const Papers = styled.div`
 
       &:hover {
         transform: rotate(-1deg) translateY(-3px);
-        filter: brightness(110%);
+        filter: brightness(105%);
       }
     }
 
@@ -111,7 +110,7 @@ export const Papers = styled.div`
 
       &:hover {
         transform: rotate(-2deg) translateY(-3px);
-        filter: brightness(110%);
+        filter: brightness(105%);
       }
     }
   }

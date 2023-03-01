@@ -14,14 +14,14 @@ const AppLayout = () => {
     <AppLayoutContainer>
       <Header />
       <Container>
-        <Divider rotate="3deg" margin="3rem 0" title="О себе" />
+        <Divider id="about" rotate="3deg" margin="3rem 0" title="О себе" />
         <About />
-        <Divider rotate="-2deg" margin="3rem 0" title="Навыки" />
+        <Divider id="skills" rotate="-2deg" margin="3rem 0" title="Навыки" />
         <Skills />
-        <Divider rotate="1deg" margin="3rem 0" title="Проекты" />
+        <Divider id="projects" rotate="1deg" margin="3rem 0" title="Проекты" />
         <Projects />
       </Container>
-      <Footer />
+      <Footer id="contacts" />
     </AppLayoutContainer>
   );
 };

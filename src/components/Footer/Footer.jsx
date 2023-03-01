@@ -3,9 +3,9 @@ import { FooterContainer } from "./Footer.styled";
 import { FaTelegram, FaGithub, FaEnvelope } from "react-icons/fa";
 import { CONTACTS } from "../../constants";
 
-const Footer = () => {
+const Footer = ({ id }) => {
   return (
-    <FooterContainer>
+    <FooterContainer id={id}>
       <h2>Контакты</h2>
       <span>
         <FaGithub /> {CONTACTS.github}
