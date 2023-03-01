@@ -10,8 +10,8 @@ export const ScrollToTopContainer = styled.a`
   padding: 1rem;
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
   border: none;
-  background-color: white;
-  color: #303030;
+  color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
   transform: rotate(5deg);
 

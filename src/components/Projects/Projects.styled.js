@@ -90,6 +90,7 @@ export const Information = styled.div`
   h3 {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
+    color: ${({ theme }) => theme.colors.default};
     text-transform: uppercase;
     text-decoration: underline;
     font-size: 2.5rem;
@@ -98,6 +99,7 @@ export const Information = styled.div`
   p {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
+    color: ${({ theme }) => theme.colors.default};
   }
 
   a {
@@ -106,7 +108,7 @@ export const Information = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1.5rem 3rem;
-    color: #303030;
+    color: ${({ theme }) => theme.colors.default};
     background-color: white;
     font-weight: bold;
     font-size: 2.5rem;

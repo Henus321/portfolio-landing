@@ -13,6 +13,7 @@ export const DividerContainer = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    color: ${({ theme }) => theme.colors.default};
     background: linear-gradient(
         to bottom right,
         #f5f5f5,

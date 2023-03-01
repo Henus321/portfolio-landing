@@ -10,7 +10,6 @@ import { ReactComponent as Antd } from "../assets/icons/antd.svg";
 import { ReactComponent as StyledComponents } from "../assets/icons/styled-components.svg";
 import boneyJames from "../assets/img/boney-james.jpg";
 import mernDashboard from "../assets/img/mern-dashboard.jpg";
-import portfolioLanding from "../assets/img/portfolio-landing.jpg";
 
 export const ABOUT = {
   basic: {
@@ -23,7 +22,7 @@ export const ABOUT = {
   personal: {
     title: "Личная информация",
     description:
-      "Cпециализируюсь на библиотеке React. Обладаю аналитическим мышлением. Рационально отношусь к непредвиденным ситуациям, легко нахожу общий язык с людьми. Есть огромное желание применять свои технические навыки в команде и создавать качественный продукт. Готов изучать любые новые технологии, требующиеся на проекте. От работы ожидаю интересных задач, хочу развиться в профессиональном плане.",
+      "Cпециализируюсь на библиотеке React и функциональном программировании, но также всегда готов изучать любые другие технологии и подходы. Рационально отношусь к непредвиденным ситуациям, легко нахожу общий язык с людьми. Есть огромное желание применять свои технические навыки в команде и создавать качественный продукт. От работы ожидаю интересных задач, хочу развиться в профессиональном плане.",
   },
   experience: {
     title: "Опыт",
@@ -97,15 +96,6 @@ export const PROJECTS = [
     image: mernDashboard,
     link: "https://mern-dashboard.onrender.com/",
     github: "https://github.com/Henus321/mern-dashboard",
-  },
-  {
-    name: "Portfolio Landing",
-    description:
-      "Многофункциональное, ослепительное и вызывающее легкую зависть портфолио. Вы можете смотреть на него и восторгаться.",
-    stack: "JavaScript, React, Styled Components",
-    image: portfolioLanding,
-    link: "https://hen-portfolio-landing.netlify.app/",
-    github: "https://github.com/Henus321/portfolio-landing",
   },
 ];
 

@@ -7,6 +7,7 @@ export const AboutContainer = styled.section`
   padding: 10rem 15rem;
   background: url("https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
   width: 100%;
+  color: ${({ theme }) => theme.colors.default};
 
   h2 {
     grid-column: 1 / -1;
@@ -37,7 +38,7 @@ export const AboutContainer = styled.section`
     font-family: inherit;
     font-size: 3rem;
     font-weight: bold;
-    color: #303030;
+    color: inherit;
     cursor: pointer;
 
     &:hover {

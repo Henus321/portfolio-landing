@@ -7,7 +7,8 @@ export const FooterContainer = styled.footer`
   justify-items: center;
   padding: 3rem 2rem 5rem;
   width: 100%;
-  background-color: white;
+  color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.35);
 
   h2 {

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SkillsContainer = styled.section`
   display: flex;
   justify-content: center;
+  color: ${({ theme }) => theme.colors.default};
 `;
 
 export const SkillsBackground = styled.div`
@@ -11,7 +12,6 @@ export const SkillsBackground = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   padding: 4rem 5rem;
   width: 75%;
-  background-color: white;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   background-image: url("https://images.unsplash.com/photo-1519972345803-7b5e39723995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-repeat: no-repeat;
@@ -70,7 +70,6 @@ export const Icons = styled.div`
     font-size: 4rem;
     height: 4rem;
     width: 4rem;
-    color: #303030;
 
     &:not(:last-child) {
       margin-right: 1rem;

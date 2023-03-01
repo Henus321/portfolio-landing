@@ -43,8 +43,8 @@ export const NavigationContainer = styled.nav`
   a {
     display: block;
     padding: 1rem 2rem;
-    color: #303030;
-    background-color: white;
+    color: inherit;
+    background-color: ${({ theme }) => theme.colors.primary};
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.35);
     font-weight: bold;
     text-decoration: underline;

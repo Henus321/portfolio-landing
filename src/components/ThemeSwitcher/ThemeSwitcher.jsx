@@ -1,19 +1,32 @@
-import React, { useState } from "react";
-import { FaMoon } from "react-icons/fa";
+import React, { useContext } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { ThemeSwitcherContainer } from "./ThemeSwitcher.styled";
+import { ThemeSwitcherContext } from "../../context/ThemeSwitcherContext";
 
 const ThemeSwitcher = () => {
-  const [checked, setChecked] = useState(false);
+  const { isDarkTheme, setDarkTheme } = useContext(ThemeSwitcherContext);
 
-  const onChange = () => {
-    setChecked((prevState) => !prevState);
-  };
+  const onChange = () => setDarkTheme(!isDarkTheme);
 
   return (
-    <ThemeSwitcherContainer>
-      <span>Светлая тема</span>
-      <FaMoon />
-      <input type="checkbox" checked={checked} onChange={() => onChange()} />
+    <ThemeSwitcherContainer rotate={isDarkTheme ? "2deg" : "-2deg"}>
+      {isDarkTheme ? (
+        <>
+          <span>Темная тема</span>
+          <FaMoon />
+        </>
+      ) : (
+        <>
+          <span>Светлая тема</span>
+          <FaSun />
+        </>
+      )}
+
+      <input
+        type="checkbox"
+        checked={isDarkTheme}
+        onChange={() => onChange()}
+      />
     </ThemeSwitcherContainer>
   );
 };
