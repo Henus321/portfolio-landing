@@ -13,6 +13,18 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+      font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: ${({ theme }) => theme.tabPort}) {
+      font-size: 50%;
+    }
+
+    @media only screen and (min-width: ${({ theme }) => theme.bigDesktop}) {
+      font-size: 75%; 
+    }
   }
 
   body {

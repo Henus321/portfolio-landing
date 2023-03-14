@@ -10,6 +10,16 @@ export const ThemeSwitcherContainer = styled.div`
   text-decoration: underline;
   transform: ${({ rotate }) => `rotate(${rotate || "-2deg"})`};
 
+  @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 1rem 2rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+    span {
+      display: none;
+    }
+  }
+
   & > * {
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -35,6 +45,10 @@ export const ThemeSwitcherContainer = styled.div`
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     -webkit-appearance: none;
     appearance: none;
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      width: 6rem;
+    }
   }
 
   input:checked[type="checkbox"] {
@@ -52,9 +66,20 @@ export const ThemeSwitcherContainer = styled.div`
     background-color: white;
     transform: ${({ rotate }) => `scale(1.1) rotate(${rotate || "-2deg"})`};
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      width: 3rem;
+      height: 3rem;
+      left: 0.5rem;
+      top: -30%;
+    }
   }
 
   input:checked[type="checkbox"]::before {
     left: 5rem;
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      left: 2.5rem;
+    }
   }
 `;

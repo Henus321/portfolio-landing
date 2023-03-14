@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./constants";
-import { ThemeSwitcherContext } from "./context/ThemeSwitcherContext";
+import { Context } from "./context/Context";
 
 import GlobalStyles from "./styles/Global";
 import AppLayout from "./components/AppLayout/AppLayout";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
-  const { isDarkTheme } = useContext(ThemeSwitcherContext);
+  const { isDarkTheme } = useContext(Context);
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>

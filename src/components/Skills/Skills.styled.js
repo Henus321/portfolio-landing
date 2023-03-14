@@ -18,6 +18,12 @@ export const SkillsBackground = styled.div`
   background-size: cover;
   transform: rotate(0.5deg);
 
+  @media only screen and (max-width: ${({ theme }) => theme.tabPort}) {
+    grid-template-columns: 1fr;
+    padding: 3rem 4rem;
+    width: 80%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -36,12 +42,10 @@ export const SkillsBackground = styled.div`
   h3 {
     font-size: 2.5rem;
     text-decoration: underline;
-    z-index: 2;
   }
 
   ul {
     list-style: none;
-    z-index: 2;
   }
 `;
 
@@ -51,28 +55,43 @@ export const SkillsEl = styled.div`
   justify-items: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 1rem;
+  z-index: 2;
 `;
 
 export const SkillsAdditionalEl = styled.div`
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  z-index: 2;
 `;
 
 export const Icons = styled.div`
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  z-index: 2;
+
+  div {
+    display: flex;
+    flex-wrap: no-wrap;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
 
   svg {
     font-size: 4rem;
     height: 4rem;
     width: 4rem;
-
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
+    margin-right: 1rem;
   }
 `;

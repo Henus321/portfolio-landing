@@ -6,6 +6,16 @@ export const ProjectsContainer = styled.section`
   padding: 0 15rem;
   margin-bottom: 6rem;
 
+  @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+
   h2 {
     text-align: center;
     font-size: 3rem;
@@ -26,6 +36,10 @@ export const Project = styled.div`
   background-size: cover;
   border: 0.5rem solid white;
   transform: rotate(0.3deg);
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 1rem;
+  }
 
   &::after {
     content: "";
@@ -57,12 +71,24 @@ export const Project = styled.div`
     flex-direction: row-reverse;
     background-position: bottom;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+    flex-direction: column;
+
+    &:nth-child(odd) {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const ImageContainer = styled.a`
   display: block;
   width: 55%;
   z-index: 2;
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
@@ -87,6 +113,10 @@ export const Information = styled.div`
   margin-top: 3rem;
   z-index: 2;
 
+  @media only screen and (max-width: ${({ theme }) => theme.tabLand}) {
+    width: 100%;
+  }
+
   h3 {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
@@ -102,6 +132,17 @@ export const Information = styled.div`
     color: ${({ theme }) => theme.colors.default};
   }
 
+  div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      justify-content: space-between;
+    }
+  }
+
   a {
     padding: 1rem 2rem;
     display: flex;
@@ -115,6 +156,10 @@ export const Information = styled.div`
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transform: rotate(-1deg);
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      padding: 1rem 2rem;
+    }
 
     &:last-child {
       transform: rotate(1deg);
@@ -132,12 +177,5 @@ export const Information = styled.div`
     svg {
       margin-right: 0.5rem;
     }
-  }
-
-  div {
-    display: flex;
-    justify-content: space-around;
-    margin-top: auto;
-    margin-bottom: 3rem;
   }
 `;

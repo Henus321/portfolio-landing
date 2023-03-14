@@ -62,11 +62,21 @@ const Skills = () => {
           </ul>
         </SkillsEl>
         <Icons>
-          {[
-            ...SKILLS.primary.icons,
-            ...SKILLS.secondary.icons,
-            ...SKILLS.layout.icons,
-          ].map((icon, index) => React.createElement(icon, { key: index }))}
+          <div>
+            {SKILLS.primary.icons.map((icon, index) =>
+              React.createElement(icon, { key: index })
+            )}
+          </div>
+          <div>
+            {SKILLS.secondary.icons.map((icon, index) =>
+              React.createElement(icon, { key: index })
+            )}
+          </div>
+          <div>
+            {SKILLS.layout.icons.map((icon, index) =>
+              React.createElement(icon, { key: index })
+            )}
+          </div>
         </Icons>
         <SkillsAdditionalEl>
           <h3>{SKILLS.additional.title}</h3>

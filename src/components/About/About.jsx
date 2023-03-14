@@ -1,6 +1,14 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { AboutContainer, Papers, Avatar } from "./About.styled";
+import {
+  AboutContainer,
+  Avatar,
+  Git,
+  Header,
+  Information,
+  Experience,
+  Education,
+} from "./About.styled";
 import { Pin, Frame } from "../../styles/Shared.styled";
 import pin from "../../assets/decoration/pin.png";
 import { ABOUT } from "../../constants/content";
@@ -15,9 +23,9 @@ const About = () => {
       <AboutContainer>
         <h2>{ABOUT.basic.name}</h2>
         <span>{ABOUT.basic.position}</span>
-        <div>
+        <Header>
           <Avatar src={ABOUT.basic.avatar} alt="Portrait" />
-          <a
+          <Git
             href={ABOUT.basic.github}
             rel="noopener noreferrer"
             target="_blank"
@@ -30,46 +38,38 @@ const About = () => {
               alt="Pin"
             />
             <FaGithub /> Github
-          </a>
-        </div>
-        <Papers>
-          <div>
-            <Pin
-              rotate="-90deg"
-              left="1rem"
-              top="0.5rem"
-              hue="10deg"
-              src={pin}
-              alt="Pin"
-            />
-            <Pin
-              rotate="10deg"
-              right="1rem"
-              top="0.5rem"
-              hue="-200deg"
-              src={pin}
-              alt="Pin"
-            />
-            <h3>{ABOUT.personal.title}</h3>
-            <p>{ABOUT.personal.description}</p>
-          </div>
-          <div>
-            <Pin
-              rotate="260deg"
-              top="0.5rem"
-              hue="-150deg"
-              src={pin}
-              alt="Pin"
-            />
-            <h3>{ABOUT.experience.title}</h3>
-            <p>{ABOUT.experience.description}</p>
-          </div>
-          <div>
-            <Pin top="0" hue="10deg" src={pin} alt="Pin" />
-            <h3>{ABOUT.education.title}</h3>
-            <p>{ABOUT.education.description}</p>
-          </div>
-        </Papers>
+          </Git>
+        </Header>
+        <Information>
+          <Pin
+            rotate="-90deg"
+            left="1rem"
+            top="0.5rem"
+            hue="10deg"
+            src={pin}
+            alt="Pin"
+          />
+          <Pin
+            rotate="10deg"
+            right="1rem"
+            top="0.5rem"
+            hue="-200deg"
+            src={pin}
+            alt="Pin"
+          />
+          <h3>{ABOUT.personal.title}</h3>
+          <p>{ABOUT.personal.description}</p>
+        </Information>
+        <Experience>
+          <Pin rotate="260deg" top="0.5rem" hue="-150deg" src={pin} alt="Pin" />
+          <h3>{ABOUT.experience.title}</h3>
+          <p>{ABOUT.experience.description}</p>
+        </Experience>
+        <Education>
+          <Pin top="0" hue="10deg" src={pin} alt="Pin" />
+          <h3>{ABOUT.education.title}</h3>
+          <p>{ABOUT.education.description}</p>
+        </Education>
       </AboutContainer>
       <Frame
         src="https://images.unsplash.com/photo-1625496235025-d783abf061c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2040&q=80"

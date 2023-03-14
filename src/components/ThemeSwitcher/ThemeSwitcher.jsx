@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { ThemeSwitcherContainer } from "./ThemeSwitcher.styled";
-import { ThemeSwitcherContext } from "../../context/ThemeSwitcherContext";
+import { Context } from "../../context/Context";
 
 const ThemeSwitcher = () => {
-  const { isDarkTheme, setDarkTheme } = useContext(ThemeSwitcherContext);
+  const { isDarkTheme, setDarkTheme } = useContext(Context);
 
   const onChange = () => setDarkTheme(!isDarkTheme);
 

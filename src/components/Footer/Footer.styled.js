@@ -11,11 +11,19 @@ export const FooterContainer = styled.footer`
   background-color: ${({ theme }) => theme.colors.primary};
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.35);
 
+  @media only screen and (max-width: ${({ theme }) => theme.tabPort}) {
+    grid-template-columns: 1fr;
+  }
+
   h2 {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
     font-size: 2.5rem;
     text-decoration: underline;
+
+    @media only screen and (max-width: ${({ theme }) => theme.tabPort}) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   span {
@@ -24,6 +32,11 @@ export const FooterContainer = styled.footer`
 
     &:not(:last-child) {
       margin-right: 2rem;
+
+      @media only screen and (max-width: ${({ theme }) => theme.tabPort}) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 

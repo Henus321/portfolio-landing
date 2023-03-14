@@ -7,7 +7,10 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 0 3rem;
   height: 10rem;
-  width: 100%;
   background-color: transparent;
   z-index: 100;
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 0 2rem;
+  }
 `;

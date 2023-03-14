@@ -1,21 +1,50 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../context/Context";
 import { NavigationContainer } from "./Navigation.styled";
+import { FaCaretDown, FaCaretLeft } from "react-icons/fa";
 
 const Navigation = () => {
+  const { isMenuActive, setMenuActive } = useContext(Context);
+
+  const onChange = () => setMenuActive(!isMenuActive);
+
+  const onMenuClose = () => setMenuActive(false);
+
+  const onContainerClick = (e) => e.stopPropagation();
+
   return (
-    <NavigationContainer>
+    <NavigationContainer onClick={(e) => onContainerClick(e)}>
+      <input
+        type="checkbox"
+        id="menu"
+        checked={isMenuActive}
+        onChange={() => onChange()}
+      />
+      <label htmlFor="menu">
+        Меню
+        <FaCaretLeft />
+        <FaCaretDown />
+      </label>
       <ul>
         <li>
-          <a href="#about">О себе</a>
+          <a onClick={() => onMenuClose()} href="#about">
+            О себе
+          </a>
         </li>
         <li>
-          <a href="#skills">Навыки</a>
+          <a onClick={() => onMenuClose()} href="#skills">
+            Навыки
+          </a>
         </li>
         <li>
-          <a href="#projects">Проекты</a>
+          <a onClick={() => onMenuClose()} href="#projects">
+            Проекты
+          </a>
         </li>
         <li>
-          <a href="#contacts">Контакты</a>
+          <a onClick={() => onMenuClose()} href="#contacts">
+            Контакты
+          </a>
         </li>
       </ul>
     </NavigationContainer>

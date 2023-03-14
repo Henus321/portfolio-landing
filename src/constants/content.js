@@ -10,14 +10,14 @@ import { ReactComponent as Antd } from "../assets/icons/antd.svg";
 import { ReactComponent as StyledComponents } from "../assets/icons/styled-components.svg";
 import boneyJames from "../assets/img/boney-james.jpg";
 import mernDashboard from "../assets/img/mern-dashboard.jpg";
+import avatar from "../assets/img/avatar.jpg";
 
 export const ABOUT = {
   basic: {
     name: "Александр Ерхов",
     position: "Frontend-разработчик",
     github: "https://github.com/Henus321",
-    avatar:
-      "https://images.unsplash.com/photo-1575425186775-b8de9a427e67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    avatar,
   },
   personal: {
     title: "Личная информация",
