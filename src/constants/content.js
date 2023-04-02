@@ -8,8 +8,11 @@ import { ReactComponent as Tailwind } from "../assets/icons/tailwindcss.svg";
 import { ReactComponent as Jest } from "../assets/icons/jest.svg";
 import { ReactComponent as Antd } from "../assets/icons/antd.svg";
 import { ReactComponent as StyledComponents } from "../assets/icons/styled-components.svg";
+import { ReactComponent as MobX } from "../assets/icons/mobx.svg";
+import { ReactComponent as NextJs } from "../assets/icons/next-js.svg";
 import boneyJames from "../assets/img/boney-james.jpg";
 import mernDashboard from "../assets/img/mern-dashboard.jpg";
+import russoTrip from "../assets/img/russo-trip.jpg";
 import avatar from "../assets/img/avatar.jpg";
 
 export const ABOUT = {
@@ -22,7 +25,7 @@ export const ABOUT = {
   personal: {
     title: "Личная информация",
     description:
-      "Cпециализируюсь на библиотеке React и функциональном программировании, но также всегда готов изучать любые другие технологии и подходы. Рационально отношусь к непредвиденным ситуациям, легко нахожу общий язык с людьми. Есть огромное желание применять свои технические навыки в команде и создавать качественный продукт. От работы ожидаю интересных задач, хочу развиться в профессиональном плане.",
+      "Cпециализируюсь на библиотеке React, но также всегда готов изучать любые другие технологии. Рационально отношусь к непредвиденным ситуациям, легко нахожу общий язык с людьми. Есть огромное желание применять свои технические навыки в команде и создавать качественный продукт. От работы ожидаю интересных задач, хочу развиться в профессиональном плане.",
   },
   experience: {
     title: "Опыт",
@@ -39,18 +42,19 @@ export const ABOUT = {
 export const SKILLS = {
   primary: {
     title: "Основные",
-    list: [
-      "JavaScript(ES6+)",
-      "TypeScript",
-      "React(Hooks)",
-      "Redux(Thunk)/Redux Toolkit",
-    ],
-    icons: [Javascript, Typescript, FaReact, Redux],
+    list: ["JavaScript(ES6+)", "TypeScript", "React(Hooks)", "Next.js"],
+    icons: [Javascript, Typescript, FaReact, NextJs],
   },
   secondary: {
-    title: "Вспомогательные",
-    list: ["Webpack", "Jest/React Testing Library", "Git"],
-    icons: [Webpack, Jest, FaGithub],
+    title: "Дополнительные",
+    list: [
+      "Redux(Thunk)/Redux Toolkit",
+      "MobX",
+      "Webpack",
+      "Jest/React Testing Library",
+      "Git",
+    ],
+    icons: [Redux, MobX, Webpack, Jest, FaGithub],
   },
   layout: {
     title: "Верстка",
@@ -65,9 +69,11 @@ export const SKILLS = {
     icons: [FaHtml5, FaCss3Alt, Sass, StyledComponents, Tailwind, Antd],
   },
   additional: {
-    title: "Дополнительно",
+    title: "Смежные навыки",
     list: [
-      "- Опыт работы с серверной частью на Node + Express и NoSQL СУБД(MongoDB и Firebase)",
+      "- Опыт работы с серверной частью на Node + Express",
+      "- Управление NoSQL базами данных(MongoDB и Firebase)",
+      "- Работа с Headless CMS(Strapi)",
       "- Практика проектирования REST API",
       "- Навык использования Postman для HTTP запросов",
       "- Есть опыт верстки с макетов Figma, Photoshop и Pixel Perfect",
@@ -96,6 +102,15 @@ export const PROJECTS = [
     image: mernDashboard,
     link: "https://mern-dashboard.onrender.com/",
     github: "https://github.com/Henus321/mern-dashboard",
+  },
+  {
+    name: "Russo Trip",
+    description:
+      "Блог о путешествиях. Вы можете просматривать посты, оставлять комментарии и делать закладки. Аутентификация осуществляется с помощью Strapi.",
+    stack: "TypeScript, Next.js, MobX, TailwindCSS, Strapi",
+    image: russoTrip,
+    link: "https://russo-trip.vercel.app/",
+    github: "https://github.com/Henus321/russo-trip-frontend",
   },
 ];
 

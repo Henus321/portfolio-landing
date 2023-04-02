@@ -78,13 +78,14 @@ export const Icons = styled.div`
   div {
     display: flex;
     flex-wrap: no-wrap;
-    margin-bottom: 1rem;
 
-    &:last-child {
-      @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
+    svg {
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
